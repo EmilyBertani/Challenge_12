@@ -16,7 +16,7 @@
 
 * Accuracy - Accuracy measures how often the model was correct. If the model predicted a fraudulent transaction that was actually fraudulent, or if the model predicted a non fraudulent transaction that was truly not fraudulent, this leads to higher accuracy.
 
-* Precision - Precision measures our confidence that the model correctly makes positive predictions. So for all transactions that were predicted fraudulent, precision measures how many were truly fraudulent.
+* Precision - Precision measures our confidence that the model correctly makes positive predictions. So for all transactions that were predicted fraudulent or non fraudulent, precision measures how many were truly fraudulent or truly non fraudulent.
 
 * Recall - Similar to precision but slightly different, recall measures the number of true fraudulent transactions the model correctly identified as fraudulent.
 
@@ -35,17 +35,29 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
   
   ![Original Data Class Report](https://github.com/EmilyBertani/Challenge_12/blob/main/Original_data_class_report.png)
   
-  ![Resampled Data Class Report](https://github.com/EmilyBertani/Challenge_12/blob/main/Resampled_data_class_report.png)
-
-
+  * With the model run on the original data, we can see that the accuracy is excellent at 0.99. This means that 99% of the time the model accurately predicted true fraudulent and true non fraudulent transactions.
+  
+  * The precision for the original data was 1.0 for the non fraudulent transactions and 0.85 for the fraudulent transactions. This means that we are 100% confident that our model will truly predict a non fraudulent transaction and 85% confident the model will truly predict a fraudulent transaction.
+  
+  * The recall for the original data shows the recall of 0.99 for the non fraudulent transactions and 0.91 for the fraudulent transactions. This means that for all non fraudulent transactions, our model correctly identified 99% of them, and for all fraudulent transactions, our model correctly identified 91%.
 
 * Machine Learning Model 2, Resampled Data:
   * Description of Model 2 Accuracy, Precision, and Recall scores.
+  
+  ![Resampled Data Class Report](https://github.com/EmilyBertani/Challenge_12/blob/main/Resampled_data_class_report.png)
+  
+  * With the model run on the resampled data, we can see that the accuracy is also at 0.99. So with the resampled data, 99% of the time the model accurately predicted true fraudulent and true non fraudulent transactions.
+  
+  * The precision for the resampled data was again 1.0 for the non fraudulent transactions and 0.84 for the fraudulent transactions. This means that we are 100% confident that our model will truly predict a non fraudulent transaction and 84% confident the model will truly predict a fraudulent transaction.
+  
+  * The recall for the resampled data shows again a recall of 0.99 for the non fraudulent transactions and 0.99 for the fraudulent transactions. This means that for all non fraudulent transactions, our model correctly identified 99% of them, and for all fraudulent transactions, our model correctly identified 99%.
+
+---
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
-If you do not recommend any of the models, please justify your reasoning.
+* From this analysis, we can see that there is minimal difference between the original and resampled data. However, our goal is to most accurately and precisely predict fraudulent data. Therefore I would opt for the resampled data model as the recall for the fraudulent data is almost perfect at 99% compared to 91% with the original data. Even with a precision of 84% with resampled data compared to 85% with the original data, this .01% difference is still worth using the resampled data.
+
+* As mentioned above, it is more important to correctly predict fraudulent data compared to non fraudulent data. Therefore as above, I stand by using the resampled data as the model for fraud detection.
+
