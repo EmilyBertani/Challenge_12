@@ -28,8 +28,6 @@
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1, Original Data:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
   
@@ -37,7 +35,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
   
   * With the model run on the original data, we can see that the accuracy is excellent at 0.99. This means that 99% of the time the model accurately predicted true fraudulent and true non fraudulent transactions.
   
-  * The precision for the original data was 1.0 for the non fraudulent transactions and 0.85 for the fraudulent transactions. This means that we are 100% confident that our model will truly predict a non fraudulent transaction and 85% confident the model will truly predict a fraudulent transaction.
+  * The precision for the original data was 1.00 for the non fraudulent transactions and 0.85 for the fraudulent transactions. This means that we are 100% confident that our model will truly predict a non fraudulent transaction and 85% confident the model will truly predict a fraudulent transaction.
   
   * The recall for the original data shows the recall of 0.99 for the non fraudulent transactions and 0.91 for the fraudulent transactions. This means that for all non fraudulent transactions, our model correctly identified 99% of them, and for all fraudulent transactions, our model correctly identified 91%.
 
@@ -48,7 +46,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
   
   * With the model run on the resampled data, we can see that the accuracy is also at 0.99. So with the resampled data, 99% of the time the model accurately predicted true fraudulent and true non fraudulent transactions.
   
-  * The precision for the resampled data was again 1.0 for the non fraudulent transactions and 0.84 for the fraudulent transactions. This means that we are 100% confident that our model will truly predict a non fraudulent transaction and 84% confident the model will truly predict a fraudulent transaction.
+  * The precision for the resampled data was again 1.00 for the non fraudulent transactions and 0.84 for the fraudulent transactions. This means that we are 100% confident that our model will truly predict a non fraudulent transaction and 84% confident the model will truly predict a fraudulent transaction.
   
   * The recall for the resampled data shows again a recall of 0.99 for the non fraudulent transactions and 0.99 for the fraudulent transactions. This means that for all non fraudulent transactions, our model correctly identified 99% of them, and for all fraudulent transactions, our model correctly identified 99%.
 
