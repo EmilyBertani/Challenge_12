@@ -32,6 +32,10 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 * Machine Learning Model 1, Original Data:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
+  
+  ![Original Data Class Report](https://github.com/EmilyBertani/Challenge_12/blob/main/Original_data_class_report.png)
+  
+  ![Resampled Data Class Report](https://github.com/EmilyBertani/Challenge_12/blob/main/Resampled_data_class_report.png)
 
 
 
